@@ -127,6 +127,6 @@ vervolgens verander ik de opacity van de dots
 * [d3.schemeCategory10](https://github.com/d3/d3-scale/blob/master/README.md#schemeCategory10) - a categorical scheme with 10 colors.
 * [d3.select](https://github.com/d3/d3-selection/blob/master/README.md#select) - select an element from the document.
 
-#License
+# License
 
 MIT @ Bas Rikkers
