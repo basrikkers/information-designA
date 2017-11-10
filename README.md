@@ -130,3 +130,6 @@ vervolgens verander ik de opacity van de dots
 # License
 
 MIT @ Bas Rikkers
+
+
+![preview](preview.gif)
