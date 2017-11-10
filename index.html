@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<title>scheidsrechter vs supporters</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<body scroll="no" style="overflow: hidden">
+  
+  <div class="start">
+    <h1>De scheidsrechter vs supporters</h1>
+    <h2>welke invloed heeft het publiek op de scheidsrechter?</h2>
+    <h2>Mijn  gemaakte berekeningen</h2>
+    <p>
+      De laatste jaren wordt er steeds meer onderzoek gedaan naar de mogelijke toepassingen van videoscheidsrechters.
+      Zo worden de beslissingen van de scheidsrechters steeds meer onder de loep genomen.
+      Een terugkerend vraagstuk is hierbij wat de invloed is van het publiek op de scheidsrechter.
+      Wordt er meer gefloten in het voordeel van het thuisspelende team, of juist niet?
+      Ik heb hier onderzoek naar gedaan, door te kijken 5 grootste competities.
+    </p>
+
+    <p>Het thuisvoordeel is berekend vanuit het volgende principe: Het thuisvoordeel is het percentage beslissingen van de scheidsrechter die in het voordeel zijn van het thuisspelende team ten opzichte van het totaal
+
+    </p>
+    <div class="som">
+      (Beslissing voor thuisspelend team) <hr> (totaal aantal beslissingen) <div class="perc">
+        x100%
+      </div>
+    </div>
+    <input type="button" name="" value="Start" id="start">
+  </div>
+  <div class="conclusie">
+    <a id="conclusieClose" >&times;</a>
+    <h1>conclusies</h1>
+    <li>Het thuisvoordeel wordt aanzienlijk groter bij een hoger aantal toeschouwers</li>
+    <li>In Engeland zijn ze het minst beinvloedbaar door het publiek</li>
+    <li>In Spanje zijn ze juist het meest beinvloedbaar door het publiek</li>
+  </div>
+<header>
+
+</header>
+
+<div class="main">
+
+  <h1 class="headerMain">Thuisvoordeel per Wedstrijd</h1>
+  <h1 class="HeaderSmall3">Thuisvoordeel Overtredingen</h1>
+  <h1 class="HeaderSmall1">Thuisvoordeel Gele Kaarten</h1>
+  <h1 class="HeaderSmall2">Thuisvoordeel Rode Kaarten</h1>
+  <div class="filter">
+    <h1>filter</h1>
+    <label><input type="checkbox" class="myCheckbox" value="Engeland" name="checkb" checked> Engeland</label>
+<label>  <input type="checkbox" class="myCheckbox" value="Duitsland" name="checkb" checked> Duitsland</label>
+
+<label>  <input type="checkbox" class="myCheckbox" value="Italie" name="checkb" checked> Italie</label>
+<label>  <input type="checkbox" class="myCheckbox" value="Spanje" name="checkb" checked> Spanje</label>
+  <label><input type="checkbox" class="myCheckbox" value="Frankrijk" name="checkb" checked> Frankrijk</label>
+  <h1>toeschouwers</h1>
+  <label><input style="width: 200px;" type="range" min="0" max="70000" id="BZS" value="0" step='1000'></label>
+  <h3 id="toeschouwers">Min toeschouwers: 3000</h3>
+
+  <h1>info</h1>
+  <p>In deze grafieken is te zien wat de verhouding is tussen het gemiddeld aantal toeschouwers per voetbalwedstrijd en de beslissingen van de scheidsrechter. het percentage thuisvoordeel geeft aan welk deel van de beslissingen in het voordeel van het thuisspelende team is</p>
+  </div>
+  <svg id="svgMain">
+  </svg>
+  <div class="gameSpecs">
+    <h1 id="SpecsHomeTeam"></h1>
+    <h1 id="SpecsAwayTeam"></h1>
+    <h3 id="SpecsFouls"></h3>
+    <h3 id="SpecsYellow"></h3>
+    <h3 id="SpecsRed"></h3>
+    <h3 id="SpecsBZ"></h3>
+
+
+  </div>
+
+</div>
+<div class="small">
+
+
+<svg id="svgSmallOne" width="275" height="225" class="svgSmall">
+</svg>
+<svg id="svgSmallTwo" width="275" height="225" class="svgSmall">
+</svg>
+<svg id="svgSmallThree" width="275" height="225" class="svgSmall">
+</svg>
+</div>
+<div id="conclusieOpen">
+  conclusies
+</div>
+<script src="//d3js.org/d3.v4.min.js"></script>
+<script src=https://unpkg.com/d3-tip@0.7.1/index.js></script>
+<script type="text/javascript" src="script.js"></script>
